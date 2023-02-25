@@ -1,0 +1,108 @@
+{
+  "Model": "models/citizen/citizen.vmdl",
+  "Description": "",
+  "BlendMode": "Opaque",
+  "nodes": [
+    {
+      "_class": "Result",
+      "Albedo": {
+        "Identifier": "1",
+        "Output": "Result"
+      },
+      "Emission": {},
+      "Opacity": {},
+      "TintMask": {},
+      "Normal": {},
+      "Roughness": {},
+      "Metalness": {},
+      "AmbientOcclusion": {},
+      "Sheen": {},
+      "SheenRoughness": {},
+      "Clearcoat": {},
+      "ClearcoatRoughness": {},
+      "ClearcoatNormal": {},
+      "Anisotropy": {},
+      "AnisotropyRotation": {},
+      "Thickness": {},
+      "SubsurfacePower": {},
+      "SheenColor": {},
+      "SubsurfaceColor": {},
+      "Transmission": {},
+      "Absorption": {},
+      "IndexOfRefraction": {},
+      "MicroThickness": {},
+      "Identifier": "0",
+      "Position": "192,-288"
+    },
+    {
+      "_class": "Lerp",
+      "A": {
+        "Identifier": "3",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "2",
+        "Output": "Result"
+      },
+      "C": {
+        "Identifier": "7",
+        "Output": "Result"
+      },
+      "Fraction": 0.5,
+      "Identifier": "1",
+      "Position": "-400,-448"
+    },
+    {
+      "_class": "Float4",
+      "Name": "",
+      "Value": "0,1,0.34233,1",
+      "Identifier": "2",
+      "Position": "-736,-512"
+    },
+    {
+      "_class": "Float4",
+      "Name": "",
+      "Value": "0.15894,0.96243,0.09566,1",
+      "Identifier": "3",
+      "Position": "-736,-672"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "5",
+        "Output": "Z"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": -26,
+      "Identifier": "4",
+      "Position": "-608,-272"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "6",
+        "Output": "Result"
+      },
+      "Identifier": "5",
+      "Position": "-816,-304"
+    },
+    {
+      "_class": "WorldPosition",
+      "Identifier": "6",
+      "Position": "-1008,-320"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "4",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": 0.025,
+      "Identifier": "7",
+      "Position": "-416,-272"
+    }
+  ]
+}
